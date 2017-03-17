@@ -1,10 +1,10 @@
 {
-  "name": "webproject",
+  "name": "graduation",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "author": "zhaoyj",
   "license": "ISC",
@@ -13,5 +13,14 @@
   },
   "devDependencies": {
     "gulp": "^3.9.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GeniusJing1006/graduation.git"
+  },
+  "bugs": {
+    "url": "https://github.com/GeniusJing1006/graduation/issues"
+  },
+  "homepage": "https://github.com/GeniusJing1006/graduation#readme",
+  "description": ""
 }
