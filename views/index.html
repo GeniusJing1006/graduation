@@ -4,20 +4,102 @@
 		<meta charset="UTF-8">
 		<title>小辉煌招聘</title>
         <link rel="stylesheet" href="./public/css/bootstrap/bootstrap.min.css">
-        <!--<link rel="stylesheet" href="./public/css/index.css">-->
+        <link rel="stylesheet" href="./public/css/index.css">
 	</head>
-    <style>
-
-    </style>
 	<body>
-		<header>
-            <button id="btn">按鈕</button>
-        </header>
+        <!-- 导航 -->
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">小辉煌</a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                	<li><a href="#">首页</a></li>
+                    <li><a href="#">登录</a></li>
+                    <li><a href="#">注册</a></li>
+                </ul>
+                </div>
+            </div>
+        </nav>
+        <!--登录注册表单-->
+        <div class="login_bg">
+        	<!--<img src="../public/img/bg.jpg" id="login-bg" />-->
+        	<!--登录-->
+        	<div class="login">
+	    		<div class="login_tab">用户登录</div>
+	    		<div id="tab1" class="login_tabcon">
+	    			<div id="tab1-login">
+	    				<p class="err_code cor_org">用户名或密码有误！</p>
+	    				<ul class="login_form">
+	    					<li>
+	    						<div class="txt_div">
+	    							<input class="txt_inp" type="text" value="" placeholder="请输入用户名" id="tab1-login-user">
+	    							<i class="ico_user"></i>
+	    						</div>
+	    					</li>
+	    					<li>
+	    						<div class="txt_div">
+	    							<input class="txt_inp" type="password" value="" placeholder="请输入密码" id="tab1-login-password">
+	    							<i class="ico_pass"></i>
+	    						</div>
+	    					</li>
+	    				</ul>
+	    				<div class="login_div">
+	    					<a class="btn_sub" id="tab1-login-login-btn">登录</a>
+	    					<div class="no_reg">
+	    						还没有账号？&nbsp;
+	    						<a class="pass-reglink">注册账号</a>
+	    					</div>
+	    				</div>
+	    			</div>
+	    		</div>
+	    		<div id="tab2" class="login_tabcon hide">
+	    			<div id="tab1-login">
+	    				<p class="err_code cor_org">用户名或密码有误！</p>
+	    				<ul class="login_form">
+	    					<li>
+	    						<div class="txt_div">
+	    							<input class="txt_inp" type="text" value="" placeholder="请设置用户名" id="tab1-login-user" name="user">
+	    							<i class="ico_user"></i>
+	    						</div>
+	    						<div class="user_msg"><!--4-12位英文字母，区分大小写--></div>
+	    					</li>
+	    					<li>
+	    						<div class="txt_div">
+	    							<input class="txt_inp" type="password" value="" placeholder="请输入密码" id="tab1-login-password" name="pwd">
+	    							<i class="ico_pass"></i>
+	    						</div>
+	    						<div class="pwd_msg"><!--6~14个字符，支持数字、大小写字符--></div>
+	    					</li>
+	    					<li>
+	    						<div class="txt_div">
+	    							<input class="txt_inp" type="password" value="" placeholder="确认密码" id="tab1-again-password">
+	    							<i class="ico_pass"></i>
+	    						</div>
+	    					</li>
+	    					<div class="confirm_msg"><!--必须与密码一致--></div>
+	    				</ul>
+	    				<div class="login_div">
+	    					<a class="btn_sub" id="tab1-login-login-btn">注册</a>
+	    					<div class="no_reg">
+	    						已注册账号？&nbsp;
+	    						<a class="pass-loglink">去登录</a>
+	    					</div>
+	    				</div>
+	    			</div>
+	    		</div>
+        	</div>
+        </div>
 	</body>
-    <script>
-        var btn = document.getElementById('btn');
-        btn.addEventListener('click',function(){
-            location.href = 'nav.html'
-        })
-    </script>
+	<script src="../public/js/jquery/jquery.min.js"></script>
+	<script src="../public/js/index.js"></script>
 </html>

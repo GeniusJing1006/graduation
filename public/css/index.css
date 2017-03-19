@@ -10,6 +10,9 @@
 .navbar-default .navbar-nav>li>a:hover {
     color: #fff;
 }
+.navbar-default .navbar-nav>li>a:visited{
+	color: rgba(255,255,255,0.5);
+}
 .navbar-default .navbar-brand {
     color: #fff;
     font-weight: 600;
@@ -20,20 +23,8 @@
     color: #fff;
     background-color: transparent;
 }
-/*注册表单*/
-.form-horizontal{
-	left: 50%;
-	margin-left: -250px;
-	top: 50%;
-	margin-top: -90px;
-	width: 500px;
-	height: 180px;
-	padding: 15px;
-	background-color: #fff;
-	position: absolute;
-}
 /*主页面*/
-.login{ 
+.login_bg{ 
 position:absolute; 
 top:0; 
 left:0; 
@@ -47,4 +38,160 @@ background-size: cover;
 -webkit-background-size: cover;/* 兼容Webkit内核浏览器如Chrome和Safari */ 
 -o-background-size: cover;/* 兼容Opera */ 
 z-index: -1;
+}
+/*登录*/
+.login{
+	width: 360px;
+    
+    position: absolute;
+    top: 50%;
+    margin-top: -180px;
+    left: 50%;
+    margin-left: -180px;
+    font-size: 12px;
+	background-color: #fff;
+	border-radius: 8px;
+    -webkit-border-radius: 8px;
+	z-index: 10;
+}
+.login ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.login_tab{
+	font-size: 16px;
+	height: 45px;
+	line-height: 45px;
+	text-align: center;
+	background-color: #5297f8;
+    color: #cbe1ff;
+    border-radius: 8px 8px 0 0;
+}
+/*.login_tab li{
+	position: relative;
+	font-size: 14px;
+	float: left;
+	width: 50%;
+	height: 45px;
+	line-height: 45px;
+	text-align: center;
+	background-color: #5297f8;
+    color: #cbe1ff;
+    cursor: pointer;
+}
+.login_tab li#tab_1{
+	border-radius: 8px 0 0 0;
+}
+.login_tab li#tab_2{
+	border-radius: 0 8px 0 0;
+}
+.login_tab li#tab_1:after{
+	content: '';
+    position: absolute;
+    display: block;
+    top: 10px;
+    right: 0;
+    width: 1px;
+    height: 25px;
+    background-color: #3d7bd2;
+}*/
+.login_tabcon{
+	padding: 15px 20px 50px 20px;
+}
+.err_code{
+	height: 20px;
+    line-height: 20px;
+}
+.cor_org{
+	color: red;
+}
+.user_msg,.pwd_msg,.confirm_msg{
+	height: 22px;
+	line-height: 22px;
+	padding-left: 25px;
+}
+
+.txt_div {
+    background-color: #f2f2f3;
+    border: 1px solid #f2f2f3;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    padding: 0 30px 0 45px;
+    position: relative;
+}
+#tab1 #tab1-login .login_form li{
+	padding: 8px 0;
+}
+.txt_inp {
+    background: none;
+    border: none;
+    color: #a0a0a0;
+    display: block;
+    height: 36px;
+    line-height: 36px;
+    width: 100%;
+    outline: none;
+}
+.ico_user{
+	background-image: url(../img/user.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	position: absolute;
+	top: 9px;
+	left: 12px;
+	width: 20px;
+	height: 20px;
+}
+.ico_pass{
+	background-image: url(../img/pwd.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	position: absolute;
+	top: 9px;
+	left: 12px;
+	width: 20px;
+	height: 20px;
+}
+/*.login_div{
+	
+	border: 1px solid red;
+}*/
+.btn_sub{
+    background-color: #4090ff;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    color: #fff;
+    display: inline-block;
+    font-size: 14px;
+    height: 38px;
+    line-height: 38px;
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
+}
+.btn_sub:hover{
+	text-decoration: none;
+	background-color: #3d7bd2;
+	color: #fff;
+	transition: all 0.5s;
+	cursor: pointer;
+}
+.no_reg{
+	float: right;
+	height: 36px;
+	line-height: 36px;
+}
+.pass-reglink:hover{
+	text-decoration: none;
+	cursor: pointer;
+	color: #337ab7;
+}
+.pass-loglink:hover{
+	text-decoration: none;
+	cursor: pointer;
+	color: #337ab7;
+}
+.hide{
+	display: none;
 }
